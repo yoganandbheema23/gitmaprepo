@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class DemoIntegration {
 	
 	@Test
-	public void TestMethod()
+	public void TestMethod() throws InterruptedException
 	{
 		
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -31,6 +31,14 @@ public class DemoIntegration {
 		
 		WebElement btnLogin=driver.findElement(By.xpath("//button[@type=\"submit\"]"));
 		btnLogin.click();
+		
+		
+		
+		Thread.sleep(5000);
+		
+		WebElement leaveElement=driver.findElement(By.xpath("//ul[@class=\"oxd-main-menu\"]/li[3]"));
+		leaveElement.click();
+		
 	}
 }
 
