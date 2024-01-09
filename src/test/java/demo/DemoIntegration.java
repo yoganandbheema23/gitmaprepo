@@ -36,7 +36,7 @@ public class DemoIntegration {
 		
 		Thread.sleep(5000);
 		
-		WebElement leaveElement=driver.findElement(By.xpath("//ul[@class=\"oxd-main-menu\"]/li[3]"));
+		WebElement leaveElement=driver.findElement(By.xpath("//ul[@class=\"oxd-main-menu\"]/li[4]"));
 		leaveElement.click();
 		
 	}
