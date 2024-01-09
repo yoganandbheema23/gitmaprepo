@@ -39,6 +39,7 @@ public class DemoIntegration {
 		WebElement leaveElement=driver.findElement(By.xpath("//ul[@class=\"oxd-main-menu\"]/li[4]"));
 		leaveElement.click();
 		System.out.println("betsy tesating purpose");
+		System.out.println("Jenkins job  testing by git hub repository level");
 		
 	}
 }
